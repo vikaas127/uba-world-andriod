@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.LegalFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp36"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_PrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:paddingLeft="@dimen/dp24"
+        android:gravity="center_vertical"
+        android:text="@string/str_privacy_policy"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp24"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_TermsCondition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:paddingLeft="@dimen/dp24"
+        android:gravity="center_vertical"
+        android:text="@string/str_terms_and_conditions"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp24"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_Acknowledgment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:paddingLeft="@dimen/dp24"
+        android:gravity="center_vertical"
+        android:text="@string/str_acknowledgment"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp24"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_Website"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:paddingLeft="@dimen/dp24"
+        android:gravity="center_vertical"
+        android:text="@string/str_website"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp24"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_Disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:paddingLeft="@dimen/dp24"
+        android:gravity="center_vertical"
+        android:text="@string/str_disclaimer"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+</LinearLayout>

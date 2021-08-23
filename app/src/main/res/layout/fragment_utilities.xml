@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.UtilitiesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frame_UtilitiesFirst"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="@dimen/dp64"
+                android:layout_marginRight="@dimen/dp64"
+                android:layout_marginTop="@dimen/dp36">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_utilities_first"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/round_window_dim"
+                    app:riv_corner_radius="@dimen/dp16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_electric_gas_water"
+                    android:lineSpacingExtra="4dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/fa_regular_400"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_UtilitiesSecond"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="@dimen/dp64"
+                android:layout_marginRight="@dimen/dp64"
+                android:layout_marginTop="@dimen/dp36">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_utilities_second"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/round_window_dim"
+                    app:riv_corner_radius="@dimen/dp16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_council_tax"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/fa_regular_400"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_UtilitiesThird"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="@dimen/dp64"
+                android:layout_marginRight="@dimen/dp64"
+                android:layout_marginTop="@dimen/dp36"
+                android:layout_marginBottom="@dimen/dp36">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_utilities_third"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/round_window_dim"
+                    app:riv_corner_radius="@dimen/dp16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_broadband_tv_license"
+                    android:lineSpacingExtra="4dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/fa_regular_400"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

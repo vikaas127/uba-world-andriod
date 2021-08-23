@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">UbaWorld</string>
+
+    <string name="str_email_address">Email address</string>
+    <string name="str_password">Password</string>
+    <string name="str_forgot_password">Forgotten Password?</string>
+    <string name="str_get_started">Get Started</string>
+    <string name="str_new_to_uba">New to Uba?</string>
+    <string name="str_create_account">Create account</string>
+
+    <string name="str_first_name">First Name (optional)</string>
+    <string name="str_last_name">Last Name (optional)</string>
+    <string name="str_birth_date">Date of Birth (optional)</string>
+    <string name="str_confirm_password">Confirm Password</string>
+    <string name="str_sign_up_accept">Sign Up and Accept</string>
+    <string name="str_sign_up_term_condition_privacy">By Tapping \"Sign Up and Accept\", you agree to the Terms of Conditions and Privacy Policy</string>
+    <string name="str_title_sign_up">Sign Up</string>
+
+    <string name="internet_connection_error">Please check your connection and try again.</string>
+    <string name="server_error_something_went_wrong">Something went wrong</string>
+    <string name="str_ok">OK</string>
+
+    <string name="valid_email">Please enter valid email address</string>
+    <string name="valid_password">Please enter password</string>
+    <string name="valid_first_name">Please enter first name</string>
+    <string name="valid_last_name">Please enter last name</string>
+    <string name="valid_select_date">Please select birth date</string>
+<!--    <string name="valid_password_length">Please enter a minimum of 6 characters to include 1 Uppercase 1 Numeric</string>-->
+    <string name="valid_password_length">Please enter a minimum of 6 characters</string>
+    <string name="valid_confirm_password">Please enter confirm password</string>
+    <string name="valid_password_not_match">Password and Confirm Password do not match</string>
+
+    <string name="str_1_corinthians_1_27_29">1 Corinthians 1:27-29</string>
+
+    <string name="str_submit">Submit</string>
+    <string name="str_title_forget_password">Forgotten Password</string>
+
+    <string name="str_next">Next</string>
+    <string name="str_welcome_slide1">Welcome to UbaWorld</string>
+    <string name="str_welcome_slide2">Connect with people easily</string>
+    <string name="str_welcome_slide3">UK Q/A For First Time Renters	|First Time Buyers</string>
+
+    <string name="str_renting">Renting</string>
+    <string name="str_buying">Buying</string>
+    <string name="str_utilities">Utilities</string>
+
+    <string name="str_title_edit_profile">Edit Profile</string>
+    <string name="str_birthday">Birthday (optional)</string>
+    <string name="str_Gender">Gender (optional)</string>
+    <string name="str_Country">Country (optional)</string>
+    <string name="str_email">Email</string>
+    <string name="str_change_password">Change Password</string>
+    <string name="str_save">Save</string>
+    <string name="str_landlord">Landlord</string>
+    <string name="str_tenant">Tenant</string>
+    <string name="str_homeowner">Homeowner</string>
+    <string name="str_student">Student</string>
+    <string name="str_other">Other</string>
+
+    <string name="str_ask_uba">Ask Uba</string>
+    <string name="str_insight">Insight</string>
+    <string name="str_reminders">Reminders</string>
+    <string name="str_legal">Legal</string>
+    <string name="str_company">Company</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_renting_guide">Renting Guide</string>
+    <string name="str_buying_guide">Buying Guide</string>
+    <string name="str_selling_guide">Selling Guide</string>
+    <string name="str_students">Students</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="str_log_out_of_ubaworld">Log out of UbaWorld</string>
+    <string name="str_logout_confirm_msg">Are you sure you want to logout?</string>
+    <string name="str_not_now">Not Now</string>
+    <string name="str_yes">Yes</string>
+
+    <string name="app_needs_permission">This app need camera permission for scan barcode.</string>
+    <string name="yes_grant_permission">Yes, Grant permission</string>
+    <string name="no">No</string>
+    <string name="goto_setting">Go to Settings</string>
+    <string name="apply_permission_setting">
+        <![CDATA[You have denied some permissions. Allow all permission at [Setting] > [Permission]]]></string>
+
+    <string name="str_privacy_policy">Privacy Policy</string>
+    <string name="str_terms_and_conditions">Terms and Conditions</string>
+    <string name="str_acknowledgment">Acknowledgment</string>
+    <string name="str_website">Website</string>
+    <string name="str_disclaimer">Disclaimer</string>
+
+<!--    <string name="str_company_line1">Our property social app is focused on building a friendly community, where you can simply connect with people at all levels, so that your first steps into housing is pressure free.</string>-->
+<!--    <string name="str_company_line2">We want our COMMUNITY to easily understand PROPERTY together.</string>-->
+<!--    <string name="str_company_line3">We want make your first conversations about property, effortless and at your own pace.</string>-->
+<!--    <string name="str_company_line4">We\'re here to make things easier but we can\'t do it without YOU</string>-->
+
+    <string name="str_company_line1">Our app is focused on making your first conversations about property in the UK less daunting.</string>
+    <string name="str_company_line2">We are building a friendly community, where you can simply connect with people at all levels, gain knowledge and also share your own personal insights within your property journey.</string>
+    <string name="str_company_line3">If you feel your questions seem silly, then UbaWorld is the best place to share it !</string>
+
+    <string name="str_select_gender">Select Gender</string>
+    <string name="hint_search_here">Search here…</string>
+    <string name="str_select_country">Select Country</string>
+    <string name="hint_enter_other">Enter Other</string>
+
+    <string name="str_buying_selling_lingo"><![CDATA[Buying & \nSelling Lingo]]></string>
+    <string name="str_process_of_selling_a_property">Process of Selling \na property</string>
+
+    <string name="title_buying_selling_lingo"><![CDATA[Buying & Selling Lingo]]></string>
+    <string name="title_process_of_selling_a_property">Process of Selling a property</string>
+
+    <string name="str_private_renting">Private Renting</string>
+    <string name="str_landlords">Landlords</string>
+
+    <string name="str_process_of_buying_a_property">Process of Buying \na property</string>
+    <string name="str_fees_you_need_to_know_about">Fees you need to \nknow about</string>
+    <string name="title_fees_you_need_to_know_about">Fees you need to know about</string>
+    <string name="str_other_buying_options">Other Buying \nOptions</string>
+    <string name="title_other_buying_options">Other Buying Options</string>
+
+    <string name="str_electric_gas_water"><![CDATA[Electric, Gas \n& Water]]></string>
+    <string name="title_electric_gas_water"><![CDATA[Electric, Gas & Water]]></string>
+    <string name="str_council_tax">Council Tax</string>
+    <string name="str_broadband_tv_license"><![CDATA[Broadband & \nTV License]]></string>
+    <string name="title_broadband_tv_license"><![CDATA[Broadband & TV License]]></string>
+
+    <string name="str_select">Select</string>
+    <string name="str_choose_your_university">Choose your University</string>
+    <string name="str_select_university">Select University</string>
+
+    <string name="str_bill_info">Bill Info</string>
+    <string name="str_type">Type</string>
+    <string name="hint_select_bill_type">SELECT BILL TYPE</string>
+    <string name="str_amount">Amount(£)</string>
+    <string name="hint_add_amount">ADD AMOUNT</string>
+    <string name="str_date">Date</string>
+    <string name="hint_select_date">SELECT DATE</string>
+    <string name="str_repeat">Repeat</string>
+    <string name="hint_select_repeat_option">SELECT REPEAT OPTION</string>
+    <string name="str_select_repeat_option">Select Repeat Option</string>
+    <string name="str_end_repeat">End Repeat</string>
+    <string name="hint_select_end_repeat_option">SELECT END REPEAT OPTION</string>
+    <string name="str_title_add_bill">Add Bill</string>
+    <string name="str_title_edit_bill">Edit Bill</string>
+    <string name="str_select_type">Select Type</string>
+
+    <string name="str_total_price">Total Price</string>
+    <string name="str_disable_reminder_notification">Disable reminder notification on \nthis device</string>
+
+    <string name="str_ask_uba_renting_comment_section">Got a question about renting? Share with us below</string>
+    <string name="str_ask_uba_buying_comment_section">Got a question about Buying? Share with us below</string>
+    <string name="str_ask_uba_utility_comment_section">Got any question about utility (electric, gas, water, council tax?) Share with us below</string>
+    <string name="str_top">Top</string>
+    <string name="str_newest">Newest</string>
+    <string name="str_my">My</string>
+
+    <string name="str_title_council_first">How do I register?</string>
+    <string name="str_description_council_first">If you have recently moved into a property, you will need to register through your local council. Either by contacting them directly or applying online.\nIf the property you’ve moved into doesn’t have a Council Tax band, you’ll need to contact your local council. They’ll arrange for your property to be assessed.</string>
+
+    <string name="str_title_council_second">Who SHOULD pay Council Tax?</string>
+    <string name="str_description_council_second">Over 18 and if you own or rent a home.</string>
+
+    <string name="str_title_council_third">Discounts</string>
+    <string name="str_description_council_third">Discounts for Full time Students | Discounts for Disabled People| Single Person Discount (25%) for if you count as an adult, you live on your own and no one else in your home counts as an adult.| Second Homes and empty properties.</string>
+
+    <string name="str_title_council_fourth">Pay your Council Tax Online</string>
+    <string name="str_description_council_fourth">You can check who your local council is and register with them online through their page.</string>
+
+    <string name="str_done">Done</string>
+
+    <string name="str_write_a_reply">Write a reply…</string>
+    <string name="str_back">Back</string>
+    <string name="str_title_thread">Thread</string>
+    <string name="str_title_edit">Edit</string>
+    <string name="str_university_comment_section">Got a question or some useful tips for finding a home at Uni? Share with us below</string>
+    <string name="delete">Delete</string>
+
+    <string name="valid_bill_type">Please select bill type</string>
+    <string name="valid_bill_amount">Please enter bill amount</string>
+    <string name="valid_start_date">Please select start date</string>
+    <string name="valid_repeat_option">Please select repeat option</string>
+
+</resources>

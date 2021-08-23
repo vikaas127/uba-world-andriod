@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE7F56</color>
+    <color name="colorPrimaryDark">#FE7F56</color>
+    <color name="colorAccent">#FE7F56</color>
+
+    <color name="shimmer">#dddddd</color>
+
+    <color name="bg_background">#EFEFF4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#1B9AF7</color>
+    <color name="light_gray">#F2F2F7</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="reminder_gray">#E6E6E6</color>
+    <color name="orange">#F59303</color>
+    <color name="sign_up_black">#555555</color>
+    <color name="black">#000000</color>
+    <color name="bg_transparent">#66000000</color>
+    <color name="red">#FF3533</color>
+    <color name="edit_blue">#0773B5</color>
+
+</resources>

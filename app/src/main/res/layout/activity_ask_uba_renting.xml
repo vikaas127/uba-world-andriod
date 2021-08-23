@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.askUba.AskUbaRentingActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/layout_title_bar_ask_uba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_CommentSection"
+        android:layout_below="@id/titleBar"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7">
+
+                    <FrameLayout
+                        android:id="@+id/frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="208dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="#60000000"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_ask_uba_living_room" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp16"
+                            android:layout_marginRight="@dimen/dp16"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:gravity="center"
+                            android:text="@string/str_ask_uba_renting_comment_section"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp56"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp24"
+                android:paddingRight="@dimen/dp24">
+
+                <TextView
+                    android:id="@+id/tv_Top"
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="@dimen/dp44"
+                    android:background="@drawable/bg_tab_bar_gray_corner"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/str_top"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp12" />
+
+                <Space
+                    android:layout_width="@dimen/dp12"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_Newest"
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="@dimen/dp44"
+                    android:background="@drawable/bg_tab_bar_gray_corner"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/str_newest"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp12" />
+
+                <Space
+                    android:layout_width="@dimen/dp12"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp84"
+                    android:layout_height="@dimen/dp44">
+
+                    <TextView
+                        android:id="@+id/tv_My"
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/dp44"
+                        android:background="@drawable/bg_tab_bar_gray_corner"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="@string/str_my"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp12" />
+
+                    <ImageView
+                        android:id="@+id/iv_My"
+                        android:layout_width="@dimen/dp16"
+                        android:layout_height="@dimen/dp16"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_dot"
+                        android:visibility="gone"
+                        app:tint="@android:color/holo_red_light" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/frame_Shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp12">
+
+                    <include layout="@layout/list_item_shimmer_comment" />
+
+                    <include layout="@layout/list_item_shimmer_comment" />
+
+                    <include layout="@layout/list_item_shimmer_comment" />
+
+                    <include layout="@layout/list_item_shimmer_comment" />
+
+                    <include layout="@layout/list_item_shimmer_comment" />
+
+                    <include layout="@layout/list_item_shimmer_comment" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/dp12"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_CommentSection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_Comment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp48"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_border_corner"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Write comment"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <Space
+            android:layout_width="@dimen/dp12"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_Send"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:src="@drawable/ic_send_button" />
+
+    </LinearLayout>
+
+    <!--    <include-->
+    <!--        android:id="@+id/titleBar"-->
+    <!--        layout="@layout/layout_comment_section"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "247074120393",
+    "firebase_url": "https://ubaworld-1ada5.firebaseio.com",
+    "project_id": "ubaworld-1ada5",
+    "storage_bucket": "ubaworld-1ada5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247074120393:android:86ce0e85d4f0db2cf96318",
+        "android_client_info": {
+          "package_name": "com.ubaworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247074120393-otaq9cjm00hg0c095aa7mrn48dca77h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD9DgzpZENIzhjcMoA0cVZXVXhlW1VEYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247074120393-otaq9cjm00hg0c095aa7mrn48dca77h9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "247074120393-c8m5f8t0dsn2k488orhchea4ggen1lv9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.UbaWorld.ubaworld"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

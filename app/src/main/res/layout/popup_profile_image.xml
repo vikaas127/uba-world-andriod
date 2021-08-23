@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/bg_white_corner"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp4"
+                android:layout_weight="1"
+                android:src="@drawable/ic_profile_cow" />
+
+            <ImageView
+                android:id="@+id/ivDog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp4"
+                android:layout_weight="1"
+                android:src="@drawable/ic_profile_dog" />
+
+            <ImageView
+                android:id="@+id/ivMonkey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp4"
+                android:layout_weight="1"
+                android:src="@drawable/ic_profile_monkey" />
+
+            <ImageView
+                android:id="@+id/ivPenguin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp4"
+                android:layout_weight="1"
+                android:src="@drawable/ic_profile_penguin" />
+
+            <ImageView
+                android:id="@+id/ivTiger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp4"
+                android:layout_weight="1"
+                android:src="@drawable/ic_profile_tiger" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvCamera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:gravity="center"
+            android:text="Take photo"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvGallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:gravity="center"
+            android:text="Choose from Library"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp20" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp56"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:gravity="center"
+        android:background="@drawable/bg_white_corner"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

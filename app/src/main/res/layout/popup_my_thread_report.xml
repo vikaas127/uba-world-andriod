@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/bg_white_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp20" />
+
+        <LinearLayout
+            android:id="@+id/ll_DeleteView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:id="@+id/tv_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp56"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/sp20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp56"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:gravity="center"
+        android:background="@drawable/bg_white_corner"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp20" />
+
+</LinearLayout>

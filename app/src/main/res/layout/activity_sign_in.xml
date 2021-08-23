@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+
+    tools:context=".activity.user.SignInActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:layout_marginTop="@dimen/dp150"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_login_app"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp24"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <EditText
+                    android:id="@+id/et_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/str_email_address"
+                    android:drawableLeft="@mipmap/ic_login_user"
+                    android:drawableTint="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:drawablePadding="@dimen/dp12"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/dp16"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <EditText
+                    android:id="@+id/et_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/str_password"
+                    android:drawableLeft="@mipmap/ic_unlocked"
+                    android:drawableTint="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:drawablePadding="@dimen/dp12"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/dp16"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp48"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/dp24"-->
+<!--                    android:layout_height="@dimen/dp24"-->
+<!--                    android:src="@mipmap/ic_login_user"-->
+<!--                    android:layout_marginTop="@dimen/dp6"-->
+<!--                    android:tint="@color/white"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_Email"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@null"-->
+<!--                    android:hint="@string/str_email_address"-->
+<!--                    android:fontFamily="@font/roboto_condensed_regular"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textColorHint="@color/white"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingLeft="@dimen/dp16"-->
+<!--                    android:paddingTop="@dimen/dp12"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textSize="@dimen/sp16" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:id="@+id/view_Email"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp1"-->
+<!--                android:background="@color/gray" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp48"-->
+<!--                android:layout_marginTop="@dimen/dp8"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/dp24"-->
+<!--                    android:layout_height="@dimen/dp24"-->
+<!--                    android:src="@mipmap/ic_unlocked"-->
+<!--                    android:layout_marginTop="@dimen/dp6"-->
+<!--                    android:tint="@color/white"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_Password"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@null"-->
+<!--                    android:hint="@string/str_password"-->
+<!--                    android:fontFamily="@font/roboto_condensed_regular"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textColorHint="@color/white"-->
+<!--                    android:imeOptions="actionDone"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingLeft="@dimen/dp16"-->
+<!--                    android:paddingTop="@dimen/dp12"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textSize="@dimen/sp16" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:id="@+id/view_Password"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp1"-->
+<!--                android:background="@color/gray" />-->
+
+            <TextView
+                android:id="@+id/tv_ForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_forgot_password"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:textSize="@dimen/sp16" />
+
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp24"
+                android:background="@drawable/bg_blue_corner"
+                android:text="@string/str_get_started"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp24"
+                android:layout_marginBottom="@dimen/dp24"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="@string/str_new_to_uba"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:textSize="@dimen/sp18"/>
+
+                <TextView
+                    android:id="@+id/tv_CreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_create_account"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:paddingLeft="@dimen/dp8"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

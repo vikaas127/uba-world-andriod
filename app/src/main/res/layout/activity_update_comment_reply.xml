@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.thread.UpdateCommentReplyActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/layout_title_bar_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginBottom="@dimen/dp24"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="54dp"
+            android:layout_height="54dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/ic_user"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="@dimen/dp1" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_Verified"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/ic_verify"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="@dimen/dp8"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_Reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp48"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_border_corner"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Write comment"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="@dimen/dp108"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_corner"
+            android:text="Cancel"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp16" />
+
+        <Space
+            android:layout_width="@dimen/dp24"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_Update"
+            android:layout_width="@dimen/dp108"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_corner"
+            android:backgroundTint="@color/blue"
+            android:text="Update"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+</LinearLayout>

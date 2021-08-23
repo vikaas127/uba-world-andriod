@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="264dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/drawer_Header"
+                layout="@layout/nav_header_navigation" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/drawer_Header"
+                android:foreground="@drawable/menu_window_dim"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_menu" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/drawer_Header"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:paddingBottom="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="144dp">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/dp108"
+                            android:layout_height="@dimen/dp108"
+                            android:layout_centerInParent="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_profile_pic"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="@dimen/dp100"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                android:src="@mipmap/ic_user" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_centerInParent="true"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_Verified"
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:src="@drawable/ic_verify"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_ProfileControl"
+                            android:layout_width="@dimen/dp28"
+                            android:layout_height="@dimen/dp28"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/dp24"
+                            android:layout_marginBottom="@dimen/dp16"
+                            android:src="@mipmap/ic_profile_controls"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_UserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/fa_regular_400"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp18" />
+
+                    <LinearLayout
+                        android:id="@+id/llAskUba"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_dot"
+                            android:drawablePadding="@dimen/dp8"
+                            android:text="@string/str_ask_uba"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp18" />
+
+                        <ImageView
+                            android:id="@+id/iv_AskUba"
+                            android:visibility="gone"
+                            android:layout_width="@dimen/dp16"
+                            android:layout_height="@dimen/dp16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot"
+                            app:tint="@android:color/holo_red_light"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llInsight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp24"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_dot"
+                            android:drawablePadding="@dimen/dp8"
+                            android:text="@string/str_insight"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp18" />
+
+                        <ImageView
+                            android:id="@+id/iv_Insight"
+                            android:visibility="gone"
+                            android:layout_width="@dimen/dp16"
+                            android:layout_height="@dimen/dp16"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot"
+                            app:tint="@android:color/holo_red_light"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/llInsightView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llRentingGuide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp24"
+                                android:drawableLeft="@drawable/ic_menu_line"
+                                android:drawablePadding="@dimen/dp8"
+                                android:text="@string/str_renting_guide"
+                                android:fontFamily="@font/fa_regular_400"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llBuyingGuide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp24"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp24"
+                                android:drawableLeft="@drawable/ic_menu_line"
+                                android:drawablePadding="@dimen/dp8"
+                                android:text="@string/str_buying_guide"
+                                android:fontFamily="@font/fa_regular_400"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llSellingGuide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp24"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp24"
+                                android:drawableLeft="@drawable/ic_menu_line"
+                                android:drawablePadding="@dimen/dp8"
+                                android:text="@string/str_selling_guide"
+                                android:fontFamily="@font/fa_regular_400"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llUtilities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp24"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp24"
+                                android:drawableLeft="@drawable/ic_menu_line"
+                                android:drawablePadding="@dimen/dp8"
+                                android:text="@string/str_utilities"
+                                android:fontFamily="@font/fa_regular_400"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llStudents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp24"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp24"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/ic_menu_line"
+                                android:drawablePadding="@dimen/dp8"
+                                android:text="@string/str_students"
+                                android:fontFamily="@font/fa_regular_400"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                            <ImageView
+                                android:id="@+id/iv_Student"
+                                android:visibility="gone"
+                                android:layout_width="@dimen/dp16"
+                                android:layout_height="@dimen/dp16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_dot"
+                                app:tint="@android:color/holo_red_light"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llReminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp24"
+                            android:drawableLeft="@drawable/ic_dot"
+                            android:drawablePadding="@dimen/dp8"
+                            android:text="@string/str_reminders"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llLegal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp24"
+                            android:drawableLeft="@drawable/ic_dot"
+                            android:drawablePadding="@dimen/dp8"
+                            android:text="@string/str_legal"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp24"
+                            android:drawableLeft="@drawable/ic_dot"
+                            android:drawablePadding="@dimen/dp8"
+                            android:text="@string/str_company"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp24"
+                            android:drawableLeft="@drawable/ic_dot"
+                            android:drawablePadding="@dimen/dp8"
+                            android:text="@string/str_logout"
+                            android:fontFamily="@font/fa_regular_400"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp18" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

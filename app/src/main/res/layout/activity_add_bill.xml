@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.AddBillActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/str_bill_info"
+        android:textAllCaps="true"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp24"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/str_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_BillType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="right|center"
+            android:hint="@string/hint_select_bill_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_OtherType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp24"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Other Reminder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <EditText
+                android:id="@+id/et_OtherReminder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="right|center"
+                android:hint="Reminder Type"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp24"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/str_amount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:id="@+id/et_Amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="right|center"
+            android:hint="@string/hint_add_amount"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp24"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/str_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_StartDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="right|center"
+            android:hint="@string/hint_select_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp24"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/str_repeat"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_RepeatType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="right|center"
+            android:hint="@string/hint_select_repeat_option"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/str_end_repeat"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <ToggleButton
+            android:id="@+id/toggle_EndRepeat"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/toggle_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_EndDate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:fontFamily="@font/montserrat_light"
+        android:gravity="right|center"
+        android:hint="@string/hint_select_end_repeat_option"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp100"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginRight="@dimen/dp100"
+        android:background="@drawable/bg_blue_corner"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/str_save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+
+</LinearLayout>

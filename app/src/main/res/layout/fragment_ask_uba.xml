@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.AskUbaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/frame_Renting"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="@dimen/dp64"
+                    android:layout_marginRight="@dimen/dp64"
+                    android:layout_marginTop="@dimen/dp36">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_ask_uba_first"
+                        android:scaleType="fitXY"
+                        android:foreground="@drawable/round_window_dim"
+                        app:riv_corner_radius="@dimen/dp16"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/str_renting"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/fa_regular_400"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_Renting"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_marginTop="@dimen/dp36"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp56"
+                    android:src="@drawable/ic_dot"
+                    android:tint="@android:color/holo_red_light"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/frame_Buying"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="@dimen/dp64"
+                    android:layout_marginRight="@dimen/dp64"
+                    android:layout_marginTop="@dimen/dp36">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_ask_uba_second"
+                        android:scaleType="fitXY"
+                        android:foreground="@drawable/round_window_dim"
+                        app:riv_corner_radius="@dimen/dp16"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/str_buying"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/fa_regular_400"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_Buying"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_marginTop="@dimen/dp36"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp56"
+                    android:src="@drawable/ic_dot"
+                    android:tint="@android:color/holo_red_light"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/frame_Utility"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="@dimen/dp64"
+                    android:layout_marginRight="@dimen/dp64"
+                    android:layout_marginTop="@dimen/dp36"
+                    android:layout_marginBottom="@dimen/dp36">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_ask_uba_third"
+                        android:scaleType="fitXY"
+                        android:foreground="@drawable/round_window_dim"
+                        app:riv_corner_radius="@dimen/dp16"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/str_utilities"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/fa_regular_400"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_Utility"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_marginTop="@dimen/dp36"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp56"
+                    android:src="@drawable/ic_dot"
+                    android:tint="@android:color/holo_red_light"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

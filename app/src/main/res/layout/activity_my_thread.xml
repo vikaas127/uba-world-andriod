@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/llView"
+    tools:context=".activity.thread.MyThreadActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/layout_title_bar_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginTop="@dimen/dp16"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginStart="@dimen/dp24">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/ic_man"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="@dimen/dp1" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_Verified"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/ic_verify"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:fontFamily="@font/montserrat_light"
+            android:ellipsize="end"
+            android:maxLines="5" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp64"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_Edit"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_edit" />
+
+                <ImageView
+                    android:id="@+id/iv_Delete"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_delete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_gravity="center"
+                    android:src="@drawable/black_dislike_icon"/>
+
+                <Space
+                    android:layout_width="@dimen/dp4"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_Like"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="@color/reminder_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_Reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_above="@id/ll_CommentSection" />
+
+        <LinearLayout
+            android:id="@+id/ll_CommentSection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_Reply"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_border_corner"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Write comment"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp16" />
+
+            <Space
+                android:layout_width="@dimen/dp12"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_Send"
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:src="@drawable/ic_send_button" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

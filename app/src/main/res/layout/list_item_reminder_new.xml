@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userSwipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:id="@+id/ll_Update_Wrapper"
+        android:layout_width="@dimen/dp64"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/edit_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            android:text="@string/str_title_edit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Delete_Wrapper"
+        android:layout_width="@dimen/dp64"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            android:text="@string/delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Main_Wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_BillType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+
+            <TextView
+                android:id="@+id/tv_Amount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="right|center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp22"
+            android:layout_marginRight="@dimen/dp22"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/sp12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp12"
+            android:background="@color/reminder_gray" />
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

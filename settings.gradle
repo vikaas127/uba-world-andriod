@@ -1,0 +1,2 @@
+rootProject.name='UbaWorld'
+include ':app'
